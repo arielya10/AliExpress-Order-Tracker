@@ -10,7 +10,7 @@ The script is scanning all the orders (Closed and Cancelled statuses not include
 - ``` python main.py```
 - Enter your email and password account in terminal
 - Wait for the Bot to scan all your orders
-- enjoy !
+- Enjoy!
 ## Screenshots
 ![2022-09-21 13-07-21_Trim](https://user-images.githubusercontent.com/68149162/191480383-00cb7454-f3c2-4b40-b73f-e1593f00f274.gif)
 
