@@ -1,6 +1,6 @@
 # AliExpressBot
 #### A simple python script used to calculate how much money you spent on AliExpress using selenium  
-The script is scanning all the orders (Closed and Cancelled statuses not included) and returns the number of orders and total money spent on AliExpress.  
+The script is scanning all the orders (Closed and Cancelled statuses not included) and returns the number of orders, and total money spent on AliExpress.  
 
 ## Requirements
 - Make sure you have google chrome installed
