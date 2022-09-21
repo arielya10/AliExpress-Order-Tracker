@@ -5,7 +5,10 @@ The script is scanning all the orders (Closed and Cancelled statuses not include
 ## Requirements
 - Make sure you have google chrome installed
 
--     pip install -r requirements.txt
+-     pip install -r requirements.txt 
+- For linux users:
+
+     chmod +x main.py
 ## Usage guide
 -     python main.py
 - Enter your email and password account in the terminal
