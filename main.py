@@ -25,9 +25,12 @@ def login():
         try:
             driver.find_element(By.XPATH, '//*[@id="root"]/div/div/div/div[2]/div/div/button[2]').click()
             print("Your account name or password is incorrect.")
+            driver.close()
+            driver.quit()
+            exit()
         except Exception:
             driver.maximize_window()
-            break;
+            break
 
 
 #Showing all the items
@@ -107,6 +110,8 @@ sum_deleted_orders=get_orders(2)
 
 print(f"Total money spent in Aliexpress: {sum_my_orders[0] + sum_deleted_orders[0]:.2f}$")
 print(f"{sum_my_orders[1] + sum_deleted_orders[1]} items bought.....")
-time.sleep(20)
+driver.close()
+driver.quit()
+
 
 
