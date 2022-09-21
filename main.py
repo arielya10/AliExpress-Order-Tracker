@@ -42,8 +42,7 @@ def show_all_orders(flag):
         except Exception:
             break
 
-#counting orders
-
+#Counting orders
 def get_orders(flag):
     i = 1
     counter=1
@@ -56,17 +55,17 @@ def get_orders(flag):
     while True:
         try:
 
-            #getting status {Finished , Awaiting delivery} ,refundable status {Closed, Cancelled}
+            #Getting statuses {Finished , Awaiting delivery} not acceptable statuses {Closed, Cancelled}
             status = driver.find_element(By.XPATH,f'//*[@id="root"]/div/div[2]/div[{flag}]/div/div[{i}]/div[1]/div[1]/{span}')
             status =status.text
             if status == "Finished" and status != "Awaiting delivery":
 
-                #getting item price
+                #Getting item price
                 order =driver.find_element(By.XPATH,f'//*[@id="root"]/div/div[2]/div[{flag}]/div/div[{i}]/div[3]/div[2]/div[1]/span')
                 driver.execute_script("arguments[0].scrollIntoView();", order)
                 order =order.text
 
-                #checking currency
+                #Checking currency
                 if order.find('₪') != -1:
                     order = order.replace('Total: ₪ ', '')
                     price=float(order)
@@ -75,7 +74,7 @@ def get_orders(flag):
                     order = order.replace('Total: US $', '')
                     price=float(order)
 
-                #summing total price
+                #Summing total price
                 counter += 1
                 total_price += price
                 print(f"({tab})({status}) Total money spent: {total_price:.2f}$, Price: {price:.2f}$, (index: {counter})\n")
@@ -94,7 +93,7 @@ driver.minimize_window()
 driver.get('https://www.aliexpress.com/p/order/index.html')
 wait = WebDriverWait(driver, 5)
 
-#login
+#Login
 login()
 
 #Getting my orders
