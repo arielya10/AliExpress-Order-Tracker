@@ -6,9 +6,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from forex_python.converter import CurrencyRates
 import time
+import pyfiglet
 
 cr=CurrencyRates()
-
+print(pyfiglet.figlet_format("AliExpress BOT"))
 #Login
 def login():
     while True:
