@@ -11,6 +11,7 @@ The script scans all the orders (Closed and Cancelled statuses not included) and
       chmod +x main.py
 ## Usage guide
 -     python main.py
+- Choose your browser
 - Enter your email and password account in the terminal
 - Wait for the Bot to scan all your orders
 - Enjoy!
