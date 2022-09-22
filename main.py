@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support import expected_conditions as EC
 from forex_python.converter import CurrencyRates
 import time
@@ -89,7 +90,22 @@ def get_orders(flag):
 
 
 #URL
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+while True:
+    print("What browser are you using ? \n")
+    print("1) Chrome\n")
+    print("2) Firefox\n")
+    try:
+        browser=int(input("Enter your choice: "))
+        if browser==1:
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+            break
+        elif browser==2:
+            driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+            break
+        else:
+            print("Enter valid option...\n")
+    except Exception:
+        print("Enter valid option...\n")
 driver.minimize_window()
 driver.get('https://www.aliexpress.com/p/order/index.html')
 wait = WebDriverWait(driver, 5)
