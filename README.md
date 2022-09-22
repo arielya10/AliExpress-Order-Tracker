@@ -12,7 +12,7 @@ The script scans all the orders (Closed and Cancelled statuses not included) and
 ## Usage guide
 -     python main.py
 - Choose your browser
-- Enter your email and password account in the terminal
+- Enter your email and password account
 - Wait for the Bot to scan all your orders
 - Enjoy!
 ## Screenshots
