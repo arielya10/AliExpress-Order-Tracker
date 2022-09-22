@@ -3,7 +3,7 @@
 The script scans all the orders (Closed and Cancelled statuses not included) and returns the number of orders, and money spent on AliExpress.  
 
 ## Installation
-- Make sure you have google chrome installed
+- Make sure you have chrome or firefox installed
 
 -     pip install -r requirements.txt
 - For Linux users  
