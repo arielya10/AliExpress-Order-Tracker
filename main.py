@@ -89,7 +89,7 @@ def get_orders(flag):
 
 
 
-#URL
+#URL and browser
 while True:
     print("What browser are you using ? \n")
     print("1) Chrome\n")
