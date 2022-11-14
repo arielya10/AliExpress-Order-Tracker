@@ -6,15 +6,13 @@ The script scans all the orders (Closed and Cancelled statuses not included) and
 - Make sure you have chrome or firefox installed
 
 -     pip install -r requirements.txt
-- For Linux users  
 
-      chmod +x main.py
 ## Usage guide
 -     python main.py
 - Choose your browser
 - Enter your email and password account
 - Wait for the Bot to scan all your orders
-- Enjoy!
+
 ## Screenshots
 ![2022-09-21 13-07-21_Trim](https://user-images.githubusercontent.com/68149162/191480383-00cb7454-f3c2-4b40-b73f-e1593f00f274.gif)
 
