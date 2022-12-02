@@ -8,7 +8,7 @@ The script scans all the orders (Closed and Cancelled statuses not included) and
 -     pip install -r requirements.txt
 
 ## Usage guide
--     python main.py
+-     python scan.py
 - Choose your browser
 - Enter your email and password account
 - Wait for the Bot to scan all your orders
