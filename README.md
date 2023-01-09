@@ -1,4 +1,4 @@
-# AliExpress Order History
+# AliExpress Order Tracker
 
 This script automates the process of logging into a user's AliExpress account and retrieves information about their order history. It shows the total amount of money spent on AliExpress and the number of items bought in the "My orders" and "Deleted orders" sections.
 
